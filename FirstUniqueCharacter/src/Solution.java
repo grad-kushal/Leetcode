@@ -14,15 +14,15 @@ public class Solution {
             int charFrequency = h.get(currentChar);
             h.put(currentChar, ++charFrequency);
         }
-        int index = 0;
+        int mapIterator = 0;
         char answer = '1';
         for (Map.Entry entry : h.entrySet()) {
             if ((int) entry.getValue() == 1) {
                 answer = (char) entry.getKey();
                 break;
             }
-            index++;
+            mapIterator++;
         }
-        return (index == h.size() ? -1 : x.indexOf(answer));
+        return (mapIterator == h.size() ? -1 : x.indexOf(answer));
     }
 }

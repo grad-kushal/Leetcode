@@ -1,9 +1,13 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
 class Solution {
     public static void main(String args []) {
         int a [][] = {{1,1,0,1,1},{1,0,0,0,0},{0,0,0,0,1},{1,1,0,1,1}};
+        ArrayList<Double> doublesv = new ArrayList<>(8);
+
+        doublesv.
         System.out.println(numDistinctIslands(a));
     }
     public static int numDistinctIslands(int[][] grid) {
